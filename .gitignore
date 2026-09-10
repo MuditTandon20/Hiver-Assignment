@@ -22,3 +22,8 @@ data/models/*.joblib
 # OS
 .DS_Store
 Thumbs.db
+
+# Ignore large processed datasets (keep golden eval sets)
+data/processed/train_conversations.json
+data/processed/test_conversations.json
+scratch/
