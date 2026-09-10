@@ -1,0 +1,63 @@
+# Central Configuration for Hiver AI Support Agent Pipeline
+
+project:
+  name: "hiver-ai-support-agent"
+  seed: 42
+  selected_brand: "AmazonHelp"
+
+data:
+  raw_data_url: "https://huggingface.co/datasets/SunidhiSriram/twcs/resolve/main/twcs.csv"
+  raw_data_path: "data/raw/twcs_sample.csv"
+  processed_dir: "data/processed"
+  train_conversations_path: "data/processed/train_conversations.json"
+  test_conversations_path: "data/processed/test_conversations.json"
+  golden_eval_set_path: "data/processed/golden_eval_set.json"
+  human_eval_set_path: "data/processed/human_eval_subset.json"
+  sample_size_raw: 250000
+
+intents:
+  taxonomy_version: "1.0"
+  num_classes: 11
+  confidence_threshold: 0.60
+  model_dir: "data/models"
+
+retrieval:
+  index_dir: "data/indices"
+  index_file: "data/indices/faiss_index.bin"
+  metadata_file: "data/indices/metadata.json"
+  top_k: 3
+  similarity_threshold: 0.45
+  embedding_dim: 300
+
+generation:
+  provider: "mock_rule_llm" # Options: "mock_rule_llm", "openai", "gemini"
+  model_name: "gpt-4o-mini"
+  temperature: 0.2
+  max_tokens: 250
+  brand_signoff: "^AMZ"
+
+escalation:
+  confidence_threshold: 0.60
+  min_retrieval_similarity: 0.45
+  sensitive_keywords:
+    - "lawsuit"
+    - "lawyer"
+    - "legal action"
+    - "sue"
+    - "attorney"
+    - "court"
+    - "fraud"
+    - "police"
+    - "hacked"
+    - "stolen card"
+    - "unauthorized charge"
+    - "harassment"
+    - "death threat"
+    - "fbi"
+    - "bbb"
+    - "better business bureau"
+
+evaluation:
+  results_dir: "evaluation/results"
+  judge_sample_size: 50
+  human_agreement_sample_size: 50

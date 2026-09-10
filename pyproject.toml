@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hiver-ai-support-agent"
+version = "1.0.0"
+description = "Production-grade, reproducible AI Customer Support Agent for AmazonHelp with multi-baseline evaluation and LLM-as-judge."
+readme = "README.md"
+authors = [{ name = "Candidate", email = "candidate@example.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "faiss-cpu>=1.7.4",
+    "pyyaml>=6.0.0",
+    "pydantic>=2.0.0",
+    "tqdm>=4.65.0",
+    "requests>=2.31.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

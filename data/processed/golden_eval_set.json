@@ -1,0 +1,3208 @@
+[
+  {
+    "example_id": "gold_seed_001",
+    "customer_text": "My package tracking number hasn't updated in 4 days and it was supposed to arrive yesterday.",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "I'm sorry for the delay! You can track real-time carrier updates in Your Orders on Amazon.com. If it doesn't arrive in 24 hours, let us know! ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_002",
+    "customer_text": "Carrier marked my order as 'Delivered to resident' at 2 PM but I was in my living room all day and nobody rang the doorbell or left anything.",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "I'm sorry your package is missing! Carriers sometimes scan ahead. Please check with neighbors or around your porch. If not found by tomorrow, contact us at amazon.com/help. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_003",
+    "customer_text": "Hey @AmazonHelp third time this month your courier delivered my prescription package to the wrong building across the street! Can you change my delivery instructions permanently?",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "We sincerely apologize for the recurring delivery issue. To update your permanent carrier delivery notes, please reach our team securely at amazon.com/help. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_004",
+    "customer_text": "My parcel was delivered but the cardboard box was completely crushed and the ceramic teapot inside is broken into pieces.",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "I'm so sorry your item arrived damaged! Please visit Your Orders on Amazon.com to request an instant free replacement or return. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_005",
+    "customer_text": "I ordered a brand new 1TB SSD but when I opened the box, there was only a bag of rocks inside. Someone stole the item in transit!",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "We take missing items and tampering very seriously. Please reach out to our specialist team immediately via secure chat at amazon.com/help so we can open an investigation. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_006",
+    "customer_text": "How do I print a return shipping label for an item that is eligible for 30-day free returns?",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "You can print your return label by heading to Your Orders > Return or Replace Items on Amazon.com and selecting your preferred drop-off location. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_007",
+    "customer_text": "I dropped off my return at the UPS drop box 10 days ago and tracking confirms receipt, but I still have not received my $120 refund.",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "Refunds typically process within 3-5 business days after carrier scan. If your refund is delayed, please check the status under Your Orders or contact support at amazon.com/help. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_008",
+    "customer_text": "I received an SMS with an OTP code that I didn't request, and now I'm locked out of my Amazon account! Please help!",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "For your security, please never share credentials publicly. Please visit amazon.com/help immediately to report unauthorized access and verify your account. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_009",
+    "customer_text": "I lost access to my old phone number and can't receive the two-factor authentication code to log into my Prime account.",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "To regain access with Two-Step Verification, please complete the Two-Step Verification Account Recovery process at amazon.com/help. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_010",
+    "customer_text": "I was charged $14.99 on my credit card statement from Amazon Digital Services but I didn't purchase anything this month.",
+    "conversation_history": [],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "We can help you identify unfamiliar charges! Please visit Your Account > Digital Subscriptions on Amazon.com or connect with us securely at amazon.com/help. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_011",
+    "customer_text": "Why did my Visa card get declined when placing an order? My bank says the funds are available.",
+    "conversation_history": [],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "Please verify that the billing address and expiration date on your Amazon account match your bank's records, or try re-entering the payment method in Your Account. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_012",
+    "customer_text": "Prime Video on my Samsung Smart TV keeps freezing on a black screen with error code 1060.",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "Sorry for the playback issue! Please try power-cycling your TV and router, and ensure the Prime Video app is updated. More troubleshooting at amazon.com/videohelp. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_013",
+    "customer_text": "I want to cancel my annual Amazon Prime membership auto-renewal before it charges me next week.",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "You can manage or cancel your Prime membership at any time by going to Your Account > Prime Membership > End Membership on Amazon.com. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_014",
+    "customer_text": "Do you know when the Sony WH-1000XM5 headphones in Silver will be back in stock from official Amazon seller?",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "Inventory availability changes quickly! Please check the product detail page and click 'Email Me When Available' for immediate restock alerts. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_015",
+    "customer_text": "Every time I click on 'Proceed to Checkout' in the Amazon Android app, the app crashes and sends me to home screen.",
+    "conversation_history": [],
+    "ground_truth_intent": "TECH_APP_ISSUE",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "Sorry for the trouble with the app! Please try clearing the app cache/data in your phone settings or reinstalling the app. You can also checkout via mobile web at amazon.com. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_016",
+    "customer_text": "This is completely fraudulent! I demand to speak with a corporate manager or I will be contacting my lawyer and the state attorney general!",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "SENSITIVE_KEYWORD_TRIGGER",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "We take your concerns very seriously. Please connect directly with our escalation team through our secure support channel at amazon.com/help. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_017",
+    "customer_text": "Your customer support is completely useless, 3 reps hung up on me and gave contradictory information about my missing parcel!",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "SEVERE_COMPLAINT",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "We are deeply sorry for your frustrating experience. We want to make this right. Please contact us via secure chat at amazon.com/help so a supervisor can assist you. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_018",
+    "customer_text": "Thanks @AmazonHelp for resolving my delivery issue so quickly this morning! Great customer service!",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "You're very welcome! We're glad we could help. Have a wonderful rest of your day! ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_seed_019",
+    "customer_text": "dm me for free crypto signals 100x bitcoin profit guaranteed http://spamlink.xyz",
+    "conversation_history": [],
+    "ground_truth_intent": "OUT_OF_SCOPE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "SENSITIVE_KEYWORD_TRIGGER",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "Thank you for reaching out. For assistance regarding Amazon orders or services, please visit amazon.com/help. ^AMZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_020",
+    "customer_text": "How soon?",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@120613 can look into the issue and get back to you. 2/2 ^SH",
+        "tweet_id": "21070"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I have sent it again.",
+        "tweet_id": "21072"
+      },
+      {
+        "role": "agent",
+        "text": "@120613 Thank you for sharing the details. We're working on it & we'll get back to you soon with an update. ^SY",
+        "tweet_id": "21073"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@120613 Please allow us 6-12 hours to get back to you with an update. Appreciate your patience, Ananya. ^JC",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_021",
+    "customer_text": "Broken product received for order 408-7624111-6539547 Looking for replacement, cu care was unable to register replace. Do check https://t.co/b9wltyKr7f",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@158484 Please don't provide your order details, we consider it personal information. Our Twitter page is visible to public. ^KS 2/2",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_022",
+    "customer_text": "Horrible customer experience from Amazon India. No tracking and No refund. What happened to customer first principle #Amazon",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@169670 here https://t.co/tppE1w0n7O and we'll reach out to you. (2/2) ^VM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_023",
+    "customer_text": "Not only was my account hacked for a third time, but their customer service had the nerve to be extremely rude to me about it.",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@162492 When you last spoke with us, were we able to offer any options or information for a resolution? Please let us know! 2/2 ^JO",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_024",
+    "customer_text": "I ordered some items, recieved a confirmation email and then recieved an email later, saying \"payment declined\". My money was taken too. Can you sort it out please.",
+    "conversation_history": [],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@157525 Sorry for the trouble this may have caused! We'd like to take a closer look into this with you. Please reach out to us here: https://t.co/JzP7hlA23B so we can investigate! ^VB",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_025",
+    "customer_text": "Olá, pessoal! (: O Kindle Unlimited aceita débito?",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@140855 Olá Jenny, atualmente aceitamos cartão de crédito para inscrever-se no programa do Kindle Unlimited. Abraço! ^LG",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_026",
+    "customer_text": "It's been over a week since the release date of my preorder with and I'm still without my preorder, so fed up",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@138674 Oh no! I'm so sorry your pre-order item has not arrived! Can you check here https://t.co/aaDyEz1VgE and tell me if an updated delivery date has been provided? ^AV",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_027",
+    "customer_text": "what if I tell a bug in your system :)",
+    "conversation_history": [],
+    "ground_truth_intent": "TECH_APP_ISSUE",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@171744 Please let us know what went wrong? ^BS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_028",
+    "customer_text": "It was ripped open, have checked that everything is in there. Still doesn’t excuse the fact it’s been opened and rummaged around in AND then your really rude customer service assistants on chat telling me I’m making stuff up...",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Anyone else ever had their @115830 parcel already opened when it’s reached them? I’m being told it’s never happened to any other customer ever so would just like some reassurance it’s not just me. #amazon",
+        "tweet_id": "80522"
+      },
+      {
+        "role": "agent",
+        "text": "@133881 I'm so sorry your parcel arrived that way! Was the item missing or damaged? Please let us know, we are here to help! ^JY",
+        "tweet_id": "80520"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@133881 This isn't at all the experience we expect to provide, I'm truly sorry! At the end of the chat, you should've received a survey. The feedback left in this survey will go directly to the representative's leadership for internal review. ^JE",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_029",
+    "customer_text": "hey I don’t really appreciate parcels being left at the front door in open view for just anyone to take. https://t.co/IB6FQt51Bn",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@152008 I can understand your concern. When you have a moment, please contact us here: https://t.co/JzP7hlRCV9 This will allow us to view your delivery details and notify our Transportation team of your experience. ^RA",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_030",
+    "customer_text": "my book came like this? :( https://t.co/YXO3XhNvhj",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@129196 I'm sorry to see it is bent. We can look into your options with you here: https://t.co/qy3J24VGxb ^AF",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_031",
+    "customer_text": "tell me this, why are you shadowing the issue by calling it a damaged product was delivered? The product was not delivered at all as the delivery person decided he won't come to the location and asked me to visit the bus stand to collect the product. 1/n https://t.co/T5bf0KdGoE",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115850 your image is being shattered by your delivery men twice in 7days, first with order number 402-7292376-4018711, a two-day delivery product which was delayed by the delivery guy by 2 days and now today 1/n",
+        "tweet_id": "128786"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@144970 Please reply to the email you've received and we'll look into it and reach out to you soon. ^AP",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_032",
+    "customer_text": "Used Amazon chat to resolve what appeared to be a duplicate charge on two different credit cards for my Prime membership. Just wanted a refund or explanation. Result? Had my Prime membership cancelled. WTH? Why?",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@154668 I'm sorry for the unexpected charges and cancellation of your membership. When you spoke with us, did we mention refunding the charges? I realize this isn't ideal; however, we can't reinstate memberships. You may enroll once more: here https://t.co/UcTxgjtllQ ^RA",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_033",
+    "customer_text": "someone has hacked my account and is buying £100s worth of gift vouchers please help ☹️☹️☹️☹️",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@162656 I'm sorry to hear this! You can contact us directly here without signing in to your account here: https://t.co/IJyKoR4602 ^ME",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_034",
+    "customer_text": "why have you taken money from my account and then declined my card",
+    "conversation_history": [],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@147582 Sorry to hear about the issues, Ethan! Without providing any personal information can you let us know a little more about the issue? ^GS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_035",
+    "customer_text": "when will you bring the audible services to India",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@119699 We haven't made an announcement on that yet. Please stay tuned for any update. ^MP",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_036",
+    "customer_text": "Thanks. It says it's compatible, but it won't actually finish loading up on my device. :(",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@9449 Monkey City has stopped loading on my Kindle suddenly (have already tried uninstalling and reintalling). Is this some sort of conspiracy w/@115821 to get me to upgrade my device!?",
+        "tweet_id": "163627"
+      },
+      {
+        "role": "agent",
+        "text": "@153849 I'm sorry you're having trouble with your app. If you're shopping here https://t.co/8TcTyNLBAL, you can see if an app is compatible with your device still. Select \"compatible devices\" under the \"Buy\" button there's a list of your devices compatible with the app ^AN",
+        "tweet_id": "163625"
+      }
+    ],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@153849 We may have some troubleshooting options for you! Can you let us know which Fire tablet model you're using? ^JS",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_037",
+    "customer_text": "yeah I opened your app and suddenly lost like $150.. there’s a glitch.",
+    "conversation_history": [],
+    "ground_truth_intent": "TECH_APP_ISSUE",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@151998 Oh wow! I'm sorry about this. There were no items in your cart already, by any chance? ^GP",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_038",
+    "customer_text": "I was told I was already refunded and that is it, then I tried explaining that I haven’t and he raised his voice and said that is it final warning , we can’t help you . I’m not sure what the warning was for but I just hung up after , worst service I ever dealt with",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@140831 Hey, did you receive emails confirming all six refunds? Also, can you see which refunds were processed here - https://t.co/ImPN7ZRn5O, select \"Order Details\". Keep us posted. ^TP",
+        "tweet_id": "111795"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Can you guys check my account and listen to the last phone call I had with the supervisor/customer service. He flat out lied on my account and then got aggressive and warned me when I was trying to explain ...I need Help #BlackFriday2017 #amazon #bitcoin",
+        "tweet_id": "111794"
+      },
+      {
+        "role": "agent",
+        "text": "@140831 We wouldn't have access to your account from here for security reasons. I'm sorry to hear about your call, what was advised when you spoke with us? ^NV",
+        "tweet_id": "111793"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@140831 I'm sorry for the experiences you've had thus far with this situation. Our team would like to take a closer look with you. Could you reach out to us here: https://t.co/ADtQ90Y0H8 so we can review the information with you? ^AZ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_039",
+    "customer_text": "Thanks. I wish the same degree of concern were shown about my complaint though.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@118701 I'm sorry about the trouble Manak. Kindly reply to the email sent by our team for further assistance. ^GD",
+        "tweet_id": "13156"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp May i just add that realising NO ACTION HAS BEEN TAKEN on my complaint is not much fun. Worst customer care EVER ! https://t.co/bHOHPNnZFA",
+        "tweet_id": "13154"
+      },
+      {
+        "role": "agent",
+        "text": "@118701 Please don't provide your order details, we consider it personal information. Our Twitter page is visible to public. (2/2) ^SV",
+        "tweet_id": "13153"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@118701 Could you please confirm if you have replied to our email? ^MK",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_040",
+    "customer_text": "#AmazonIndia cannot contact my amzagnt... Unable to receive my parcel. Where can I get more help ? His phone has been off since yesterday.",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@159155 Sorry for the trouble. Kindly report this to our support team here: https://t.co/vlvfJr4nN9 and we'll check this. ^HN",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_041",
+    "customer_text": "Thanks for the damaged box but I’m glad it still works https://t.co/xSnmgbnpNb",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@136730 Truly sorry to see that your package arrived in this condition, but we too are glad to hear it's still in working order! We're always looking to improve, please submit packaging feedback here: https://t.co/NmArAhsPVj ^JE",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_042",
+    "customer_text": "I never received my order, Your customer support not able to trace the pack. Wish to get refund",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Very bad service Amazon Transportation Services and you willing to give festival offers #badservice #AmazonGreatIndianFestival @115850",
+        "tweet_id": "230934"
+      },
+      {
+        "role": "agent",
+        "text": "@170987 I'm sorry for the trouble. Could you please elaborate your concern so that I can assist you accordingly? ^AU",
+        "tweet_id": "230931"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@170987 Please don’t provide your order details as it is personal information. Our page is visible to the public.2/2^HN",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_043",
+    "customer_text": "your link asks me to sign in but I can't - my password isn't working",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp No. That is the problem. The last I received is about my order. I tried reset my password couple times, but it didn't help",
+        "tweet_id": "141984"
+      },
+      {
+        "role": "customer",
+        "text": "@148042 @AmazonHelp I'm having the same issue - 'incorrect password' yet its not. no emails about account being locked. the code you send to reset password is not being delivered either.",
+        "tweet_id": "141985"
+      },
+      {
+        "role": "agent",
+        "text": "@148062 Hey Tony, can you contact us so that we can look into this for you: https://t.co/oGDklGgbCZ?^PJ",
+        "tweet_id": "142080"
+      }
+    ],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@148062 This link should work better for you, https://t.co/jzvkhdlrK5. ^AZ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_044",
+    "customer_text": "appalled that when charged twice for my prime membership and asked for 1 refunded I now have ended up with no prime membership",
+    "conversation_history": [],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@171913 Very sorry to hear this.If you were charged twice, this must have occurred on different accounts. Have you reached out to us?^CR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_045",
+    "customer_text": "Is it possible to give someone a gift from the Kindle store in the UK, and have it delivered to their device? Seems it's possible for US customers but not available here? You're losing money if this isn't possible!",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@133576 I am sorry, Rob. This feature is not available on our UK site. Hope this info helps!^SM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_046",
+    "customer_text": "trying to order the Switch on amazon UK and it says in stock but won’t let me add to basket!?",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@145700 Can you let me know if you are getting an error message when you try? Or is the \"Add to Basket\" button not showing for you at all? ^KI",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_047",
+    "customer_text": "When ordering the cart becomes empty even in app and browser in computer. Is it a game show or glitch??? #worstcustomerservice",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Only 6 hours to go for the #AmazonGreatIndianFestival . Are you ready https://t.co/79uciP1mD7",
+        "tweet_id": "183276"
+      }
+    ],
+    "ground_truth_intent": "TECH_APP_ISSUE",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@159100 That's odd, have you tried fresh login with the app? ^MJ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_048",
+    "customer_text": "Creating an account is one of the worst decisions I've made 🤦🏾‍♂️🤦🏾‍♂️🤦🏾‍♂️",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@159161 Why, what happened?^CD",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_049",
+    "customer_text": "Thanks for delivering my son's main Christmas present with no box or other form of cover. He now knows what he's getting - and that it won't come from Father Christmas",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@130693 I'm sorry to hear of this. Was this item sold directly by Amazon or from one of our Marketplace Sellers? ^KI",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_050",
+    "customer_text": "I have just arrived home to find a parcel at my door addressed to my wife. She has been in all day and has just checked her details to find that it says the delivery driver had handed the package to her in person?!",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@154640 Terribly sorry for the problems with your delivery, William! Let's take a closer look into this in real time with you here: https://t.co/JzP7hlA23B ^JZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_051",
+    "customer_text": "just had a delivery of a TELESCOPE thrown over our back gate and you register it as “handed to resident”! This is my daughter’s birthday present your driver is being flippant with! If it’s broken you would have ruined her birthday. Hope your happy 👏🏻😡",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@136312 Oh no! Sorry to hear this. This is not the service we expect from our carriers. What carrier delivered the order? Is the item damaged?^ES",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_052",
+    "customer_text": "Order # 408-5138278-8575536, product pickup for refund yesterday but still refund not initiated. Kindly assist",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@146158 I understand your concern regarding the refund, Anil. We'd like to help you with this. Kindly contact us here: https://t.co/vlvfJr4nN9 Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^SY",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_053",
+    "customer_text": "Still waiting for the password reset maybe by #cybermonday https://t.co/4hX6ZAHHZi",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "#BlackFriday I just tried ordering from @115821 & could not sign into my account cause I forgot my password tried to reset for 30 minutes #impossible forget about contacting them cause U have to sign into your account https://t.co/FBTrLam05v",
+        "tweet_id": "149162"
+      },
+      {
+        "role": "agent",
+        "text": "@149985 Oh no! We'd like to help you regain access your account. Please click here: https://t.co/jzvkhdlrK5 so we can further assist. ^NM",
+        "tweet_id": "149160"
+      }
+    ],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@149985 If you don't receive your password reset e-mail. Please call us at: 1-866-216-1072. ^CO",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_054",
+    "customer_text": "What it was is you have taken £1 out of my account when i had the exact money for the product then you declined my card my bank have told me to phone yous",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115830 why have you taken money from my account and then declined my card",
+        "tweet_id": "139996"
+      },
+      {
+        "role": "agent",
+        "text": "@147582 Sorry to hear about the issues, Ethan! Without providing any personal information can you let us know a little more about the issue? ^GS",
+        "tweet_id": "139994"
+      }
+    ],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@147582 I'm sorry for the frustration this has caused! Information about what this charge is and when it falls back off can be found here: https://t.co/afFZIhfQbL If you have further questions, please let us know! We're here to assist any way we can! ^KN",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_055",
+    "customer_text": "Pensando em me dar um Kindle Paperwhite de presente! Acabei de ver o twitt da que está no #blackfriday <3",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@140012 Olá, Mitcheia! Conte para nós, você vai aproveitar da promoção?. 🤔😃 ^NB",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_056",
+    "customer_text": "i'm trying to buy assassin's creed origins for the ps4 on and it just refuses to add it to my cart? it says it's in stock. what gives??",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@152507 Hmm... It looks like the item is only available from sellers other than https://t.co/nUUp5MLhYl. Could you try refreshing the page to see if your options change? ^MJ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_057",
+    "customer_text": "Y is no one replying with email ID of escalation desk or nodal? Coz u guys are good for nothing, useless, arrogant and unresponsive.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@123350 I understand that you are upset. Kindly let us know your concern by replying to the email that you received from us and we'll get back to you with an update at the earliest. ^AU",
+        "tweet_id": "33255"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Thank u for ur help 👏 I have replied to emails number of times n i have replied today also...thanks for ur valuable time n response",
+        "tweet_id": "33256"
+      },
+      {
+        "role": "agent",
+        "text": "@123350 I'm sorry about the stretch. We've received your revert and we'll reach out to you soon. ^GK",
+        "tweet_id": "33257"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@123350 We've sent a correspondence to your registered email ID here: https://t.co/fYrzNInVt2. Kindly check and reply. We'll get back to you at the earliest. ^PS",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_058",
+    "customer_text": "Hello, when will I get an update? I’ve been waiting all day...",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@140831 We wouldn't have access to your account from here for security reasons. I'm sorry to hear about your call, what was advised when you spoke with us? ^NV",
+        "tweet_id": "111793"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I was told I was already refunded and that is it, then I tried explaining that I haven’t and he raised his voice and said that is it final warning , we can’t help you . I’m not sure what the warning was for but I just hung up after , worst service I ever dealt with",
+        "tweet_id": "111792"
+      },
+      {
+        "role": "agent",
+        "text": "@140831 I'm sorry for the experiences you've had thus far with this situation. Our team would like to take a closer look with you. Could you reach out to us here: https://t.co/ADtQ90Y0H8 so we can review the information with you? ^AZ",
+        "tweet_id": "111790"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@140831 We're sorry for the wait. I can confirm we have received your information and will be reaching out to you soon to assist. ^TE",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_059",
+    "customer_text": "Oui et malheureusement vous venez de perdre un client",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@164989 Il s'agit de deux articles différents, il est possible que l'article soit disponible chez un vendeur et non pas chez nous. ^AR",
+        "tweet_id": "206876"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp C'est le même article que ma precommande, disponible en 12 exemplaires chez un de vos revendeur. 1/3",
+        "tweet_id": "206878"
+      },
+      {
+        "role": "agent",
+        "text": "@164989 Je comprends votre point de vue mais, malheureusement cela reste impossible ! ^AR.",
+        "tweet_id": "206880"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@164989 Sachez que l'on respecte votre décision ! ^AR",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_060",
+    "customer_text": "hello I have ordered an 32 GB sd card from you guys.. but you delivered an defective product.. I want to return it.. you guys were asking for a replacement which I don't to.. please refund me the amount https://t.co/w0V2KGNJM3",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@146868 I'm sorry that you received a defective item. Please note that we only have a replacement policy for SD cards. You refer to the link for more information: https://t.co/gYYDFKUNPY. Appreciate your understanding. ^AM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_061",
+    "customer_text": "Order No: 171-3705259-1179509 I have received stone in my delivery box instead of the product which I ordered and amazon specialist team said go to hell after committing me the refund today. https://t.co/KFdsbH6nAg",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@133015 Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. 2/2 ^HS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_062",
+    "customer_text": "Hey . Just because I am trying to buy a gift card from you and a big item on one of your Prime credit cards at the same time doesn’t mean my account has been hacked and you need to BLOCK IT FOR FIVE HOURS ON BLACK FRIDAY!!! #RageAgainstTheAlgorithm",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@158580 Oh no! I'm sorry you're having an issue with your account! Have you received an e-mail from our Account Specialists? Make sure to check your spam/junk folder as well! ^BN",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_063",
+    "customer_text": "There is no option not to auto renew because th payment got declined. I don't want to add a working card because I will be charged.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@172247 You can learn more about canceling your Prime trial here: https://t.co/tCEoo7uYgr ^CE",
+        "tweet_id": "236160"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp https://t.co/S80UG8sMKS",
+        "tweet_id": "236161"
+      },
+      {
+        "role": "agent",
+        "text": "@172247 You can set the trial not to auto renew here: https://t.co/EMoca4Sfya ^PK",
+        "tweet_id": "236163"
+      }
+    ],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@172247 Hi Annabel- Might be best to speak with us directly and we can see what we can do for you: https://t.co/JzP7hlA23B ^NV",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_064",
+    "customer_text": "eu simplesmente não acredito que eu e o temos um relacionamento abusivo. comprei dois em menos de quatro meses e ambos quebraram. nessa black friday, usarei meu ressarcimento pra fazer o que? isso mesmo, comprar outro!!!! mas sério, kindle, se vc me machucar de novo....",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@151191 Pois é Maria! É muito amor pelo Kindle mesmo! 😃^NP",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_065",
+    "customer_text": "Il problema l'avete creato voi di Amazon visto che in stock c'erano i cellulari ITALIANI e adesso mi proponete soluzioni vantaggiose per voi",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Dopo la storia dei gioielli finti, @120540 me ne combina un'altra: mi invia modello tedesco invece di quello italiano. SEMPRE MEGLIO",
+        "tweet_id": "226358"
+      },
+      {
+        "role": "agent",
+        "text": "@170035 Mi spiace! Lo hai già segnalato al Servizio Clienti? Puoi farlo da qui: https://t.co/WgALfLis5n. A presto! ^CS",
+        "tweet_id": "226356"
+      }
+    ],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@170035 Da Twitter non vedo il tuo ordine. Come detto dalla collega, ti consiglio di segnalare l'accaduto alla nostra Assistenza. ^MA",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_066",
+    "customer_text": "Is this happened with any one? is getting worst day by day. I contacted them regarding this. bt they r just circling around https://t.co/gUqPQyxWEK",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@171574 Sorry for the experience, Nagraj. Kindly fill in your details here: https://t.co/bON1yA9soc and we will get back to you. ^KS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_067",
+    "customer_text": "Thanks for the reply. But the shipping was free, or do returns not work that way? Thanks",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115830 hello. Wonder if you can help. Was charged 11.99 for an item. Item was wrongly ordered so was returned and I'm only refunded 8.00?",
+        "tweet_id": "230669"
+      },
+      {
+        "role": "agent",
+        "text": "@170940 If it was wrongly ordered and returned, then you won't be refunded for the shipping costs I'm afraid. ^KM",
+        "tweet_id": "230667"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@170940 Sorry, you are only refunded return shipping costs in certain situations: https://t.co/hHxwPJMqq3. ^JJ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_068",
+    "customer_text": "If Amazon team is replying n saying that escalation team is workig n wait for 24-48 hours. Wht it's means ??.why customer will wait more.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@176515 We have received your details. We'll get in touch with an update shortly. ^SQ",
+        "tweet_id": "255011"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Still not any update from your side?? What's ur restoration time limit?? Customers are just watching and investigation team is just working.",
+        "tweet_id": "255012"
+      },
+      {
+        "role": "agent",
+        "text": "@176515 I'm positive you might have received an email from our team here https://t.co/8DAc10S7ww. ^VM",
+        "tweet_id": "255013"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@176515 Please revert to the email you've received from us and we'll check this for you. ^HN",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_069",
+    "customer_text": "Hi, you sent me the wrong item and I'd like the correct item, but your returns system has no option except to ask to return it.",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@177161 I'm sorry we're unable to replace the item. Some items can't be replaced: https://t.co/XgcnDNs5j5 ^CO",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_070",
+    "customer_text": "I hv spoken to customer care. Initiate refund. Phone not according to description. Mentioned bloatware free, bt has bloatwares.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@162537 If you haven't received any revert, please share your details again. I'll reach out to you. ^HD",
+        "tweet_id": "197978"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @115851 I have shared the details twice. Have you all gone crazy. Such service to a prime customer. Please initiate refund",
+        "tweet_id": "197977"
+      },
+      {
+        "role": "agent",
+        "text": "@162537 Apologies for the confusion. We've received your details and we'll reach out to you with an update at earliest. ^SV",
+        "tweet_id": "197976"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@162537 Sorry for the inconvenience. Share your info here: https://t.co/sIrHyDJrgl, we will get your issue resolved at the earliest. ^GU",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_071",
+    "customer_text": ". why is my account being hacked like every week now...! https://t.co/zToW3sG9CC",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@128881 I'm sorry for the account issues, Liza! Have you received an e-mail from our Account Specialists? ^WT",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_072",
+    "customer_text": "hi, my order was late and I have been charged twice",
+    "conversation_history": [],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@154683 I'm sorry for the delay, Abby! Also, seeing double charges is definitely a hassle. We're here to help! When you place an order, an authorisation is sent to your bank for the validity of your card: https://t.co/WGDHT0M2yQ Let us know if this helps! ^JP",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_073",
+    "customer_text": "Is Amazon Prime Video down in India? For last 5-6 hour I am getting the message: \"UNABLE TO CONNECT\"",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@155069 That's strange & we are sorry for the trouble, have you reported this to our support team here: https://t.co/vlvfJr4nN9? ^MJ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_074",
+    "customer_text": "what a waste of preorder money if the gig I want to get to dosent work on your website. Nice one Amazon https://t.co/QLzPSqh44S",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@122106 Sorry to hear that. Please reach out here: https://t.co/Cbc5joHeR0 and we'll look into it for you. ^RS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_075",
+    "customer_text": "Just pulls a deprived stunt. My worst online shopping experience untill now has been with",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@172709 Looks like you have had an unpleasant experience with us. Kindly elaborate for us to help you better. ^MP",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_076",
+    "customer_text": "thanks for the offer of assistance in locating something you advertised on FB and never getting back to me. Poor cust svc!!",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@174533 I'm sorry for the frustration! What can we help you find? ^DD",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_077",
+    "customer_text": "They never came on the 22nd nor today the 24th",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @115821 your AMZL US delivery is the worst , I never had a delivery issue till now it’s better to stick with locals like USPS or UPS thanks✌🏼sincerely an amazon customer",
+        "tweet_id": "205264"
+      },
+      {
+        "role": "agent",
+        "text": "@164628 Sorry for the trouble, Jackie! We'd love to help! Without providing account and personal information, could you tell us more about the issue? ^VB",
+        "tweet_id": "205261"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@164628 That's odd! We'd like to help further! Could you confirm the delivery date of the package as well as the current tracking status? You can find that info here: https://t.co/Y5jpI9gRhE ^HM",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_078",
+    "customer_text": "need help getting credit for a damaged item.",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@161027 We have responded to your Direct Message, Heather. Please let us know if you need further assistance there. ^MT",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_079",
+    "customer_text": "It has been given many times, pls arrange the pickup and refund my money",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@158923 Sorry for the delay with the pickup. Have you reported the issue to our support team using the link provided earlier? ^KA",
+        "tweet_id": "227040"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp What is this ? @115821 @115850 @120781 https://t.co/JEWorPG5tb",
+        "tweet_id": "227041"
+      },
+      {
+        "role": "agent",
+        "text": "@158923 Sorry for the trouble you've had with the pick up. Kindly fill in your details here: https://t.co/GIJyeYqKE0 & I'll help you. ^MM",
+        "tweet_id": "227043"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@158923 details from the link here: https://t.co/beaaDm0muc to assist you further. (2/2)^HR",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_080",
+    "customer_text": "not best pleased to find myself locked out of ALL my accounts after an apparently successful password change - why always me???",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@158246 Have you received an email from the Account Specialist team?^CD",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_081",
+    "customer_text": "Yes, I received a message saying my payment was declined, which I immediately went on to my account to fix, as soon as I got the email.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@124281 Was this eligible for release day delivery? For more info on release day delivery, visit us here: https://t.co/i00UDgo1tt ^TK",
+        "tweet_id": "38135"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp That link is for US, I'm a UK customer. It said when I placed the order that it would be arriving on the release date.",
+        "tweet_id": "38132"
+      },
+      {
+        "role": "agent",
+        "text": "@124281 Apologies, did you receive any emails in relation to the order since you placed it? ^JJ",
+        "tweet_id": "38130"
+      }
+    ],
+    "ground_truth_intent": "BILLING_PAYMENT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@124281 I see. Payment issues and any order changes can affect an order's delivery date. More info: https://t.co/NLsOf4yhI0 ^WJ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_082",
+    "customer_text": "Euuuuuu finalmente comprei meu Kindle!!!!! 💖",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Quem já aproveitou as ofertas da Semana Black Friday? 📦🎉😱 Confira: https://t.co/AJnYoGCA0g https://t.co/5Ge05YG6Bq",
+        "tweet_id": "109786"
+      }
+    ],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@143929 Olá, Anna! Ótimo, você já sabe qual conteúdo digital vai ler assim que receber o dispositivo?. ❤️💚💛 ^NB",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_083",
+    "customer_text": "whats going on with your Nintendo Switch Mario deal. Website keeps saying it is in stock yet when i go to pay it fails. very disappointing.",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@156629 What is the error message you get? Try clearing your cache and cookies, or using a different device, browser or app. Keep us posted! ^AF",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_084",
+    "customer_text": "Had this scam email today. Deleted. https://t.co/IxrUT9OMHs",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@146926 Hi I am sorry to see that you received that email, please refer to our help page if this happens again: https://t.co/vUMWAqi6Ag. ^HS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_085",
+    "customer_text": "hello when my brother is trying to order from you ,when typing in his adress its coming up with next doors adress which is wrong",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@127738 That is strange! Your brother should be able to save his address without using the neighbor's: https://t.co/dODjwBCyVV ^FD",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_086",
+    "customer_text": "hola! Como puedo hacer una factura de una compra??? Solo soy capaz de introducir una dirección!!!",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@170842 Hola Dani, ¿en la página de Amazon de cuál país hiciste la compra? ^AR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_087",
+    "customer_text": "hiya, I ordered a headphone jack from you and got it yesterday and it’s already broken. Please advise.",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@150008 Oh no, Adam! You can find available return/replacement options here: https://t.co/JwlZXrTSnv Let us know if we can be of any further help! ^MT",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_088",
+    "customer_text": "__email__ my refund has not been fixed yet",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@172935 You may get in touch with us via chat or email here: https://t.co/rS49hgaADF ^AK",
+        "tweet_id": "239644"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Chat option is also blocked",
+        "tweet_id": "239643"
+      },
+      {
+        "role": "agent",
+        "text": "@172935 Please drop in an email with your issue/query using the link above and we'll have a look into it for you. Thanks! ^AB",
+        "tweet_id": "239642"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@172935 I'm sorry to know that. Please share your details here: https://t.co/GIJyeYqKE0 and we'll work on this right away. ^MP (1/2)",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_089",
+    "customer_text": "Think twice before give them your credit card and shopping you'll risk having your account hacked, their customer service, which happens to be in the Philippine is incompetent and unhelpful. You're left waiting & when you get someone they don't understand anything you say",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@140408 I am so sorry for the trouble, Bianca. We are here to help! Have you received an email from our account specialist? ^SC",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_090",
+    "customer_text": "help inadvertently ordered audible on book by Louisa Locke . Please advise how to cancel.",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@134819 Hi Charles! You can contact audible here: https://t.co/I3gCTY3NEH.^CN",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_091",
+    "customer_text": "I ordered call of duty on ps4 yesterday, but my little brother came on and cancelled my order and is no longer in stock!! Any help please",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@152003 Hi, Craig! Thanks so much for reaching out to us and I'm sorry to hear about the cancellation of your ps4. Once an order is canceled, we aren't able to undo this change. You can keep an eye out online for any changes in stock on this item. I hope this helps! ^VR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_092",
+    "customer_text": "Never purchase TCL led . Worst services after sales. Amazon didn't help me even.",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@121898 As informed earlier, request you to please get back to us with a service denial letter and we'll definitely look into this. ^MK",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_093",
+    "customer_text": "Thanks",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115821 Package says it was delivered, and I’ve been home all day. Now what?",
+        "tweet_id": "175403"
+      },
+      {
+        "role": "agent",
+        "text": "@157191 I'm sorry for the inconvenience! Let's try the steps listed here: https://t.co/yr4qCNwJDI ^DW",
+        "tweet_id": "175402"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@157191 Let us know if there's anything else we can help with! We're here for you! ^TK",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_094",
+    "customer_text": "Je vais donc les contacter. Merci beaucoup!",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Bonjour! Je voudrais passer une commande sur Amazon UK, 2 articles sont des précommandes pour 2 dates différentes... 1/2",
+        "tweet_id": "45555"
+      },
+      {
+        "role": "agent",
+        "text": "@126086 Bonjour, pour toutes questions sur Amazon.uk veuillez joindre leur service client via: https://t.co/baKrEwW6v9 ^BR",
+        "tweet_id": "45553"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@126086 Je vous en prie, avec plaisir :). ^BR",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_095",
+    "customer_text": "Again, a damaged product... Looks like you folks need to shut down selling large appliances on ! please connect",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Have done so. The return pickup is scheduled for next Tue as that is the earliest available time slot.,sfter which I have to reorder! #fail",
+        "tweet_id": "182604"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Have given you a second chance and reordered! Hope I will get a undamaged product this time...",
+        "tweet_id": "182602"
+      },
+      {
+        "role": "agent",
+        "text": "@158940 Thank you, Saikrishna. Be assured, your order should be delivered in pristine condition. Do keep us posted. ^SV",
+        "tweet_id": "182600"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@158940 That's odd! Please report this to our support team here: https://t.co/vlvfJr4nN9. We'll help you further. ^BS",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_096",
+    "customer_text": "While i added Axe signature In cart it was 167 nd when i placed the order i seen it was 191 Need My Refund",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@177293 We'd like to understand this better and assist you. Please contact us here: https://t.co/TK4yevTaND, ^NR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_097",
+    "customer_text": "I thought it was same form by sign in screen, sorry. I have done it now. Thanks",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@176383 When you spoke with us regarding this issue, what insight or options did we provide? ^CO",
+        "tweet_id": "254025"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Zero, Nil, Nada! Thats the problem, then today they couldn't even understand my postcode so asked for call from UK, still waiting!",
+        "tweet_id": "254026"
+      },
+      {
+        "role": "agent",
+        "text": "@176383 I'm sorry you haven't heard back. I'd like to have a member of my team look into this for you here: https://t.co/s6woz8nWuH ^MB",
+        "tweet_id": "254028"
+      }
+    ],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@176383 We've received your info and will get back to you as soon as possible! ^AC",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_098",
+    "customer_text": "Estou baixando tudo quanto é livro gratuito e amostra grátis. Obrigada #kindle",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@132998 Muito amor, Iané 💕⚡️ Qual livro baixou? 🤔 ^VL",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_099",
+    "customer_text": "My preorder was mishandled. Was escalated to a PO Box!? #xboxonex #projectscorpio #amazon #preorder #fail",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@169231 We'd like to help. What does the current status for the order state here: https://t.co/q4LAMZ3tbE? ^GG",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_100",
+    "customer_text": "v poor service. problem not solved yet. almost a month gone. not at all recommendable. executives terrible",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@174666 I'm sorry to know that your issue hasn't been resolved. We'd like to help you, could you please tell us what went wrong? ^NR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_101",
+    "customer_text": "hi! How do I check how much amazing pantry credit I have my my account? Thanks!",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@124649 Hello Joyce! Hope your're having an awesome day! You can check that balance here: https://t.co/C8mcliR5uv ^JZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_102",
+    "customer_text": "Are you a psychologist..I am not upset..I m just asking some genuine questions.. answer appropriately",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@144768 I understand your concern regarding the refund for your order. We've sent you a correspondence here: https://t.co/NTkrxpsbHJ. Request you to please refer to it. ^AM",
+        "tweet_id": "128040"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Why you are copy pasting d same message since birth of Christ..there is no mention about refund",
+        "tweet_id": "128041"
+      },
+      {
+        "role": "agent",
+        "text": "@144768 I understand that you're upset. We wouldn't be able to access your account on Twitter. Kindly reply to the correspondence you received from us for further assistance. ^BV",
+        "tweet_id": "128042"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@144768 I'm sorry for the misunderstanding. As informed, we have sent you a correspondence regarding your refund. Request you to please refer to it. ^AM",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_103",
+    "customer_text": "Amazon Echo damaged in transit package returned i say return fine but adjust the prepaid amount with the new replacement to be sent amazon call centre trained robots say NO I say 7 lakhs from CF for INR 7000 harassment unless Mr. Jeff says otherwise",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115851 Amazon order id 408-3551852-8027568 Amazon India uncooperative m going to Consumer Forum will claim 7 lakhs OK ?",
+        "tweet_id": "91453"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@135823 Kindly fill in your details using the link provided earlier so that we can resolve your issue at the earliest. ^MN",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_104",
+    "customer_text": "Dear , I am going to install the product ( as it is very delayed now☹️) and send you the charges for the same. Kindly reimburse the balance in form of amazon pay balance. Thank you.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@132737 Thanks for confirming. We'll reach out to you soon with an update. ^SG",
+        "tweet_id": "74781"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Waiting for further update.",
+        "tweet_id": "74777"
+      },
+      {
+        "role": "agent",
+        "text": "@132737 We've sent a correspondence regarding this here: https://t.co/8DAc10S7ww; Kindly check and reply so that we can check further on this. ^VN",
+        "tweet_id": "74775"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@132737 I understand your concern regarding the installation of your product. Twitter being a social platform, we do not have access to your account. As informed earlier, kindly reply to the email you received from social media team for further assistance. ^MO",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_105",
+    "customer_text": "Why is showing AV_MOBILE_IOS_DETAILS_AIRDATE_WITH_COLON everywhere? Did you guys get hacked? https://t.co/Tw9THtkiTP",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@130679 I'm sorry for that error. Our application is safe. Please try reinstalling it. ^RW",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_106",
+    "customer_text": "I am not able to see the video option on my echo dot. Hence not able to link fire TV as well. https://t.co/mkT1mJdk59",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@132148 In India, Echo doesn't support Fire TV stick, for the time being. Keep checking the Echo page for new devices that will support Alexa. Stay tuned! ^HR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_107",
+    "customer_text": "Been trying to buy an item from for the past hour. Apparently their inventory system can't decide if it is in stock or not and neither can their customer service.",
+    "conversation_history": [],
+    "ground_truth_intent": "PRODUCT_STOCK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@172903 I'm sorry for the trouble. We'd like to help in any way we can! Do you mind sending us a link to the item you were interested in? ^MB",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_108",
+    "customer_text": "That’s not what he said. He tried to make excuses as to why the driver had left it there. (Raining etc) it’s completely unacceptable",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@141428 Hi Sam, I'm sorry to hear this. What resolution was offered by the manager you spoke with? ^KK",
+        "tweet_id": "114390"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Absolutely none! Said there was nothing he could do. Waste of time. I asked if there was a policy in place if a safe place is ignored and didn’t get an answer",
+        "tweet_id": "114389"
+      },
+      {
+        "role": "agent",
+        "text": "@141428 I'm sorry for the poor responses on the call. When these types of issues are reported our carrier does investigate this internally with the driver. ^MI",
+        "tweet_id": "114384"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@141428 I'm very sorry for this poor experience, Sam! That's not the service we strive to provide. If you could give us another chance, we'd like to take another look into this with you. At your convenience, please get in touch with us here: https://t.co/JzP7hlA23B ^TH",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_109",
+    "customer_text": "thanks for trying at least u were more helpful, thanks 😩",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@126706 I'm sorry for the account issues. Have you received an e-mail about this? Did you reach us here: https://t.co/LGsFoZKHYO? ^VS",
+        "tweet_id": "47903"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp customer support ( u have recorfings) said nothing they can do , was given wrong no to call too! lol",
+        "tweet_id": "47904"
+      },
+      {
+        "role": "agent",
+        "text": "@126706 Typically, a response is given 12-24hrs; at this time please review your inbox, as well as your spam/junk e-mail. ^WM",
+        "tweet_id": "47906"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@126706 If you don't receive an e-mail from an Account Specialist by the 24-hour mark, let us know. ^MG",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_110",
+    "customer_text": "yes and i have received different information each time i talk so someone and noone is making up for anything. i am now on the phone for the 4th time again about it",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@142144 Hey Sol, we don't want you to have a non-working television! Have you had a moment to look into return and replacement options: https://t.co/hieTTwRBW8? Let us know if you need help with the return or exchange! ^PF",
+        "tweet_id": "117866"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp just spoke to your helpline again and still not had the any help at all. does anyone know what they are doing?",
+        "tweet_id": "117868"
+      },
+      {
+        "role": "agent",
+        "text": "@142144 Hello! What was advised when you contacted us?^CN",
+        "tweet_id": "117870"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@142144 I'm sorry you've had to contact us multiple times. Please let us know if you don't get a resolution with your latest call. ^MG",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_111",
+    "customer_text": "we pay for prime to have a good service and it gets lost, damaged or delayed :/",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Seriously what the fuck keeps happening with our @115830 orders? Who ever does the littlehampton to Brighton keeps loosing our stuff",
+        "tweet_id": "109906"
+      },
+      {
+        "role": "customer",
+        "text": "@115830 twice it's said it's delivered and twice it's been a lie. Not even a card through our door or anything. It even says received.",
+        "tweet_id": "109905"
+      },
+      {
+        "role": "customer",
+        "text": "@115830 who the heck is recieveing our goods? This one was nearly £100 and it's now under investigation.",
+        "tweet_id": "109904"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@140377 I'm terribly sorry to hear you don't have your parcel! We'd like to help with this! Have you had the opportunity to speak to us? If not, please reach out to us via phone/chat here: https://t.co/JzP7hlA23B and we can help. ^TK",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_112",
+    "customer_text": "Is there any limit of keeping patience? It's been over month and still being told to keep patience and no ETA. Whom to approach for refund.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Can you provide resolution as it's not yet resolved. When i will get my money back.",
+        "tweet_id": "249764"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I have doing followup since 1 month but issue is not yet resolved. it was siad i will get my money back on 11th oct but not yet recived.",
+        "tweet_id": "249769"
+      },
+      {
+        "role": "agent",
+        "text": "@175368 We regret about the delay. Please respond to our email and we'll check for an update. ^NR",
+        "tweet_id": "249770"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@175368 https://t.co/beaaDm0muc and I’ll contact you at the earliest. 3/3 ^NK",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_113",
+    "customer_text": "Can't! Acct hacked. Autoreply: This email address doesnt accept emails. contact Amazon customer service if you need assistance.",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@124166 Hmm. That is odd! Will it allow you to call using the link provided by AD? ^AL",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_114",
+    "customer_text": "Won’t ship black kindle to Northern Ireland, but will ship white?!🤷🏻‍♀️",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @117634 why does the refurbished black kindle not ship to Northern Ireland but it’s the white one does?!🤷🏻‍♀️😐",
+        "tweet_id": "65763"
+      },
+      {
+        "role": "agent",
+        "text": "@131042 Hi, Kelsey! Could you share a link of the specific item you're looking at so we can review it with you? We're here to help in any way we can! ^AZ",
+        "tweet_id": "65761"
+      }
+    ],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@131042 Hey Kelsey, do you have the link so we can check that for you? ^RS",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_115",
+    "customer_text": "Alexa's accent for Indian English is horrible. Just horrible. And skills are blocked for other languages.",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@122606 I've noted your comments and will be sure to forward this as a feedback internally. ^MP 3/3",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_116",
+    "customer_text": "Email sent. Thank you for reaching out. Looking forward to a reply...",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@164739 I'm sorry that we didn't get your order to you, Joseph! Have you contacted the carrier yet? If so, what was advised? ^FR",
+        "tweet_id": "205696"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp According to your site they claim they attempted but they didn't. @118706 automated system says the same of course.",
+        "tweet_id": "205697"
+      },
+      {
+        "role": "agent",
+        "text": "@164739 We'd like a further look into this with you! Please reach out by phone or chat: https://t.co/hApLpMlfHN ^KJ",
+        "tweet_id": "205699"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@164739 Typically, we recommend reaching out via phone or chat for the quickest resolution. Keep us posted on the reply. ^EP",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_117",
+    "customer_text": "Hey je commence à en avoir marre que votre service client me ballade et ne tienne pas ses engagement.... Est-ce qu'il faut que je paye un second abonnement prime pour avoir accès à des gens compétents ? https://t.co/ycSgKc6Jag",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@165774 Bonsoir, quel souci rencontrez-vous actuellement? pourriez-vous nous fournir plus de détails s'il vous plaît? ^SA",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_118",
+    "customer_text": "sold an iPhone to a buyer who requested return & returned phone with different IMEI. Apple confirmed the phone was not the same, and had also been tampered with. is taking the buyer’s side. I’m out $600! What can I do? What are my rights?",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@133915 Hi, have you reported this directly to our seller support team, if so what has been advised?^SM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_119",
+    "customer_text": "Don't reply bullshit.. Bankrupt company don't have money to refund customer... From top to bottom everyone is hopeless",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@171905 My apologies for the stretch in the refund process. For updates on the same, please revert to our email. ^HA",
+        "tweet_id": "234782"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @115851 @115850 Shame on your company and shame on ur management..",
+        "tweet_id": "234781"
+      },
+      {
+        "role": "agent",
+        "text": "@171905 I understand your disappointment and I'm sorry about this. Please revert to our email with your query. ^HA",
+        "tweet_id": "234780"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@171905 Sorry for the disappointment. Please revert to the mail we have sent you so that we can help you further. ^GU",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_120",
+    "customer_text": "Got the Pixel 2 and the app will not let me log in. I put in my info and it just keeps going back to the main login screen without any explanation. I can sign in no problem on desktop and on my tablet. Help?",
+    "conversation_history": [],
+    "ground_truth_intent": "ACCOUNT_ACCESS",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_SECURITY_RISK",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@144608 I'm terribly sorry for the frustration signing in to the app! Have you tried deleting the app and reinstalling it? ^DG",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_121",
+    "customer_text": "I have miraculously purchased a kindle book but wanting to buy the hardback version. Please can I change it? Can't contact you!",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@171581 Hi, you can return the Kindle book for a refund, you can find out how to here: https://t.co/NLcCwdtzoN. ^JJ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_122",
+    "customer_text": "Amazon India is trying its best to prove that they are one of the most useless customer service providers in the industry.",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@171436 Seems like we have an opportunity that we can fix. Please help us know your concern so that we can resolve it right away ^AU",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_123",
+    "customer_text": "Thanks :) Have a great day!!",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@116618 any plan of updating the ios app supporting iPhoneX? Cc: @129773 @115821 @115825",
+        "tweet_id": "174549"
+      },
+      {
+        "role": "agent",
+        "text": "@156922 Thanks for the feedback - i will forward it. Kind regards ^NW",
+        "tweet_id": "174547"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@156922 You're very welcome, Ben! I hope you have a great day, as well! 😁 ^SD",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_124",
+    "customer_text": "How do I prevent my wife, with whom I share a Household Prime Account, from getting email notifications of holiday gifts I purchase for her?",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@139213 Thank you for reaching out! Do you share an account with your wife as well, or are you simply in a household with her? ^GR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_125",
+    "customer_text": "# I bought a phone and the delivered product is defective and already 6-7 days but company is denying refund.",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@169744 Sorry for the inconvenience. We're following up with your query here: https://t.co/wYGpsqkOrG. Please refer. ^GS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_126",
+    "customer_text": "#Worst experience with you ever, #wrong shipment details provided, #order #cancelled after 6 days without any intimation, #No #refund till date #customer service executive talked in very rude language & hang up without listening anything. #ridiculous services.",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@148594 We would like to help you. Please share your details with us here: https://t.co/GIJyeYqKE0. We'll get in touch shortly. ^CB",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_127",
+    "customer_text": "When will Madam Secretary S4 will be available on Amazon Prime Video India?",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@120466 Currently, we do not have an update on this. Please stay tuned. ^HK",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_128",
+    "customer_text": "Yes have managed to deliver to the wrong address and even got a signature - useless",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "When your @115830 parcel is flagged as 'delivered' but clearly not to you... 😒",
+        "tweet_id": "229801"
+      },
+      {
+        "role": "agent",
+        "text": "@170764 Is there any additional information on the tracking?^CD",
+        "tweet_id": "229798"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@170764 Sorry to hear that, have you been able to locate the parcel: https://t.co/L76CBge35P? ^JJ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_129",
+    "customer_text": "Ah, okay, thanks. Wasn't awake yet. Much appreciated.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Hey @115821 @AmazonHelp where did the tracking number go?? I want to see the tracking # like it used to always be. #Amazon #Tracking https://t.co/Tle9dUfwkR",
+        "tweet_id": "173556"
+      },
+      {
+        "role": "agent",
+        "text": "@156635 Hi there! From your screenshot it looks like your package hasn't shipped out yet. Once the item has shipped, you'll be able to find tracking information on the same screen. ^JM",
+        "tweet_id": "173554"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@156635 You're welcome! And we totally think that the Thanksgiving Day aftermath and Black Friday wonderfulness call for some much needed rest. We hope you enjoyed it! Please let us know if there is anything else we can help with. ^NS",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_130",
+    "customer_text": "ho comprato dei libri, anzi mio padre me li ha comprati e spediti a Roma. oggi non ho università e il corriere amazon ha suonato mentre ero ancora a letto. arriva e mi dice \"bella vita! bensvegliata!\" io mi domando perché mi dica questo e ho notato il mio pigiama coi funghetti.",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@147147 😂 Chi è che non ha un pigiama con i funghetti nell'armadio? 🍄 ^CS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_131",
+    "customer_text": "Normally does a great job of packaging shipments.... not today though. Giant box with literally 0 packing materials. Fortunately it doesn’t look like anything was damaged https://t.co/k4KxgxWHzq",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@139212 Sorry for all the extra space! Please be sure to leave some feedback so we can improve in the future: https://t.co/GL35cBos0V ^BG",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_132",
+    "customer_text": "I received the order yesterday ,and what is the status of my prime membership refund",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@159036 We understand your concern. Please write back to the email which you received from our team and we will get back. ^SB",
+        "tweet_id": "182957"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I am not getting any mail from your side,and the mail i am getting is https://t.co/V7PxcnRQHd",
+        "tweet_id": "182958"
+      },
+      {
+        "role": "agent",
+        "text": "@159036 I can confirm we have sent a correspondence to your registered email address. You can find all the emails 1/2 ^SH",
+        "tweet_id": "182961"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@159036 We understand your concern. Please reply to the correspondence and we'll check this and assist you. ^SV",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_133",
+    "customer_text": "gente o desconto no kindle vai ate quando?",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@145090 Mais informação sobre a promoção aqui: https://t.co/cNtyszM5D7. ^VM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_134",
+    "customer_text": "worst seller performance service.",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@132118 I get you being upset. We've responded to your concern here: https://t.co/Z8LWAZmtLe. We request you to check and do the needful. ^HS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_135",
+    "customer_text": "thanks for keeping me on the line for 35 minutes and hanging up! cc:",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@132470 Without posting account information can you tell us about the issue? We'll be glad to help!^CN",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_136",
+    "customer_text": "Wat apologies?? Ur seriously mood spoiler. Im happy to uninstall Ur app. N I Tel al ma frenz as well to uninstall it.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I jus received a msg for refund success of INR.499/- however it has not reflected in my bank account. Dis should have been done in October itself. Bloody cheap service as usual by @AmazonHelp",
+        "tweet_id": "215978"
+      },
+      {
+        "role": "agent",
+        "text": "@167356 Apologies for the unpleasant experience you've had. We'd like to help. Kindly share your details here: https://t.co/cQVomR1pWz and we'll have this resolved at the earliest. ^KH",
+        "tweet_id": "215977"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@167356 I understand you're disappointed, Mihir. We'd like to help you. Please share your details through the link that was provided earlier for further assistance. Appreciate your understanding. ^NK",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_137",
+    "customer_text": "Despite the massive sticker on the box that says: EXPLODES INTO FLAMES IF DAMAGED, the delivery dude still gave it a good toss. https://t.co/Y0OXVQC3wA",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@130237 I'm sorry your package was tossed! I'd like to report this to Amazon Logistics. Please give details: https://t.co/tDraNk7QeZ ^WJ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_138",
+    "customer_text": "Third time I have filled the form. Dont treat prime customers like this. Such poor service. Initiate refund",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@162537 Apologies for the confusion. We've received your details and we'll reach out to you with an update at earliest. ^SV",
+        "tweet_id": "197976"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @115851 I hv spoken to customer care. Initiate refund. Phone not according to description. Mentioned bloatware free, bt has bloatwares.",
+        "tweet_id": "197975"
+      },
+      {
+        "role": "agent",
+        "text": "@162537 Sorry for the inconvenience. Share your info here: https://t.co/sIrHyDJrgl, we will get your issue resolved at the earliest. ^GU",
+        "tweet_id": "197974"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@162537 We have received your details. And we will get back to you with an update at the earliest. ^SQ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_139",
+    "customer_text": "¿Aún no hay canal de Roku para el Prime Video México? El canal actual me manda al servicio de USA, donde no tengo prime.",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@168196 Hola. Actualmente estos son los dispositivos compatibles: https://t.co/k7VU2fqQCJ.",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_140",
+    "customer_text": "Your customer service have just been rude and refuse to acknowledge what I'm saying. Please, please help me.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115830 Gran's order has been cancelled twice. It's limited item, but keep explaining I bought three on my account & 3 on her new account.",
+        "tweet_id": "197783"
+      },
+      {
+        "role": "customer",
+        "text": "@115830 @115830 Please help me! Not trying to fool anyone just trying to buy three more books on behalf of my gran.",
+        "tweet_id": "197782"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@162511 I'm so sorry for your experience! Without giving us any account information, would you tell us what's going on? ^MH",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_141",
+    "customer_text": "dont wanna cancel because its her account. but its okay she’ll just repay me lmao thanks for helping",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@166905 Hi, we would like to help you with this. Without posting any of your account details can you please tell us how much the charge was for? ^BZ",
+        "tweet_id": "214323"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp girl i used my aunts amazon prime to order stuff and instead of the monthly membership charging her card it charged mine:-( this has happened twice",
+        "tweet_id": "214324"
+      },
+      {
+        "role": "agent",
+        "text": "@166905 I'm sorry to hear about this Anye, have you tried canceling the Prime to get the charge refunded back to your card? Your Aunt can adjust the Prime membership on her account from the following link: http:https://t.co/WejH9RBhxW. ^PJ",
+        "tweet_id": "214326"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@166905 It may also be worth your Aunt to get in contact with us so we can make sure your card isn't charged again: https://t.co/CYqkdUakWJ. ^PJ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_142",
+    "customer_text": "I have been watching this is us almost completed all episodes, how would I know if I qualify.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Win an Amazon Fire TV Stick - Watch your favourite movies & TV shows! 10 winners a week till 31st Oct. #SuperDiwali https://t.co/8SzYpbOUax https://t.co/K4IcvnxQEY",
+        "tweet_id": "226016"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@169618 It will be a luck draw. We wish you all the good luck on this. ^CB",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_143",
+    "customer_text": "I’m hoping it’s not damaged-it’s a laptop, I won’t find out until Christmas Day as it’s a gift 🎁 how should I go about perhaps you making a note on my account, about possible damage, I have taken photos of the outer box",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Dear @115830 I’m not very happy that a lap top I ordered from you costing over £500 was left in my unlocked porch! Box is all bashed in as well-also ordered it on prime, took 4 days to arrive #shoddyservice",
+        "tweet_id": "102608"
+      },
+      {
+        "role": "agent",
+        "text": "@138538 Oh no! I'm sorry your order was delivered like this! Was anything inside damaged? If needed, return/replacement options can be found here: https://t.co/QKBu4Np3HM. Do you have an unattended delivery preference set: https://t.co/ZqUGL0dN4D? ^MB",
+        "tweet_id": "102606"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@138538 You can call or chat in to speak with us about options here:https://t.co/JzP7hlA23B Keep us posted how that goes. ^SG",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_144",
+    "customer_text": "Regarding payment!Despite adding cash Amazonpay & rcvd confirmatory SMS.But not reflected in statement. #refund Ph:8428939085 https://t.co/1Y8jP9cNQA",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@153432 Please don't provide your order details, we consider it personal information. Our Twitter page is visible to public. (2/2) ^SV",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_145",
+    "customer_text": "Viagem para Recife!! 12 horas de bus tinha que ser com um kindle na mão",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "O Kindle te acompanha com a bateria que pode durar semanas 🚗 😍 Para onde você já levou o seu Kindle sem ter que recarregar? #BateriaKindle https://t.co/8pThB5BvPe",
+        "tweet_id": "190318"
+      }
+    ],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@165816 Olá Adriana, o Kindle é como um herói nessas horas! ❤ ^DA",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_146",
+    "customer_text": "I've lived in four countries and by far yours is the worst service I've ever experienced.",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@136723 Hey Dani, please let us know what happened! ^LN",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_147",
+    "customer_text": "Hi, thanks. Nope still not working.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@148037 I'm sorry you were given the incorrect information! Did you set up your commute, as the help page describes? We'd like to help! ^ZW",
+        "tweet_id": "141939"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp https://t.co/mRggxGBFvS",
+        "tweet_id": "141942"
+      },
+      {
+        "role": "agent",
+        "text": "@148037 Hmm, I see! Let's try resetting your echo. You can do that here: https://t.co/PpCGh9cQs0 Please keep us updated! ^GP",
+        "tweet_id": "141944"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@148037 We'd like to try some real-time troubleshooting over the phone. At your earliest convenience, please request a callback here: https://t.co/AQaDoISPyr ^NC",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_148",
+    "customer_text": "- delivery received today for order id- 4__credit_card__, open box used product sent by amazon. Product returned to del. person https://t.co/tnZsYMMg7I",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@171311 Please don’t provide your order details as it is personal information. Our page is visible to the public.2/2^HN",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_149",
+    "customer_text": "How much time does need to share a product invoice? Firstly, your seller sells me a defective Jaybird. (1/2)",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@173140 Please drop your details here: https://t.co/C0x3L92jrN so that we can get in touch with you. (2/2) ^VM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_150",
+    "customer_text": "Hey nice job making my account overdraw bc of something YOU did and then refusing to refund me properly. Don’t jerk your customers around. Fix it!",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@154653 I'm sorry for the poor experience. Without including any account details, can you tell us more about what's happened? ^ZW",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_151",
+    "customer_text": "¿Como hago uso de los 30 días gratis de Kindle? Ya me registré pero el sistema quiere cobrarme el servicio y como no he autorizado el cargo, no puedo leer, ¿No se supone que al registrarme obtengo 30 días de prueba?",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@116875 ¡Hola! ¿Porqué si ofrecen 30 días gratis para @9997 se cobran a lo chino?",
+        "tweet_id": "175387"
+      },
+      {
+        "role": "agent",
+        "text": "@157187 ¡Hola, Michael! ¿Nos podrías brindar más detalles sobre tu consulta? ^DS",
+        "tweet_id": "175386"
+      }
+    ],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@157187 Hola Michel, si nunca has usado el servicio, los primeros 30 días son gratis, sin embargo se pide la información de pago ya que la renovación es automática, a menos que no lo desees y luego canceles antes de los 30 días. ^JD",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_152",
+    "customer_text": "Preordered a Sony XZ1 Compact on Thursday 28/9 (AmazonUK), ETA tomorrow and yet to ship. Chat support very polite but useless.",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@177158 It's not uncommon for items to ship before their delivery date. Please, do keep us updated on the order's arrival! ^JE",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_153",
+    "customer_text": "Shout out to Ashish and Shruti from online chat support resolving two order issues (one my fault) in less than a minute! Thank you!",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@138299 Glad to hear that, Kristopher! Did you receive a feedback survey at the end of your chat? ^TI",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_154",
+    "customer_text": "30 days since i raised an issue but no one contacted yet from amazon. #unhappy #poorservice #amazon #retail",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@140392 Apologies, Dheeraj. We'd like to have a closer look at this. Kindly drop in your details here: https://t.co/GIJyeYqKE0 and we'll reach out to you. Please don't provide your order details as we consider it personal information.Our twitter page is visible to public.^NK",
+        "tweet_id": "109865"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I already have given my details on the shared link. It is going to be now around 30 days since i am trying to reach amazon customer care. @115851 @amazonhelp #unhappy #poorservice #amazon #retail #ecommerce",
+        "tweet_id": "109866"
+      },
+      {
+        "role": "agent",
+        "text": "@140392 Thanks a bunch for sharing your details with us. We shall reach out at the earliest to make things right. We value your time. ^CB",
+        "tweet_id": "109867"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@140392 I have checked on my resource and can see that we have not received your details yet, Dheeraj. Kindly share your details using the link provided earlier and we'll contact you shortly. ^MP",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_155",
+    "customer_text": "Would love to know how think it acceptable to leave parcels out in the open to get wet and damaged, especially in winter?! #unacceptable #poorservice",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@149990 I'm sorry to hear this has happened, David! Were the items damaged? Regardless, please contact us here: https://t.co/J5cVftJLZO so we can help file the proper feedback on your behalf. ^TM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_156",
+    "customer_text": "Still haven't got any refund how long?",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@146916 We are here to help. Please update us once you're done filling up the details and we'll investigate. ^HS",
+        "tweet_id": "140899"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Filled the form. Look into the matter at earliest can't wait longer than this",
+        "tweet_id": "140900"
+      },
+      {
+        "role": "agent",
+        "text": "@146916 Thanks for confirming that you've provided your details. Please allow us some time and we'll reach out. ^KA",
+        "tweet_id": "140902"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@146916 We've sent you a correspondence to your registered email ID here: https://t.co/fYrzNInVt2. Kindly check. ^PS",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_157",
+    "customer_text": "Is the fire tv going to go on sale this weekend too?",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp why never answer my question",
+        "tweet_id": "138166"
+      },
+      {
+        "role": "agent",
+        "text": "@147122 Hey Steven, my apologies, how can I help?^TI",
+        "tweet_id": "138165"
+      }
+    ],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@147122 You'll have to keep an eye on the website to see if the Fire TV is on sale, here's a link to our Black Friday deals: //www.amazon.com/Black-Friday/b?ie=UTF8&node=384082011.^TI",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_158",
+    "customer_text": "has the worst customer service",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@136745 Oh no! I'm sorry to hear that. Is there something we can assist with? ^DY",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_159",
+    "customer_text": "Substandard customer service for rural areas again. What exactly did I pay extra for? Very disappointed child here - thanks.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115830 you didn’t “try and fail to deliver my parcel” today. There’s been someone in all damn day and no one has approached my house!!!",
+        "tweet_id": "52211"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@127740 When you spoke with us, what information or insight was provided? ^KP",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_160",
+    "customer_text": "Why my item was delivered after cancelling it through customer care. Why are u People torturing me .fed up past 6 days r true show of amazon",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@131040 I get your disappointment, Jetender. Please allow our team to work on this for you. We'll get back to you with the best possible resolution. Appreciate your understanding. ^NK",
+        "tweet_id": "65731"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @115851 🙏🙏🙏 sorry sir , don't want this ,will not write again. Byee byee .u can close it ,u give up",
+        "tweet_id": "65729"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @115851 Sorry ,...I give up",
+        "tweet_id": "65728"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@131040 Twitter being a Social Media Platform we would not be able to check your order or account details. We have sent a correspondence to your registered email ID, please check and reply to the same. We will look into it. ^AH",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_161",
+    "customer_text": "hi, need to return a product. This was a gift and tried late and found to be defective. Just crossed couple of days after allowed date for replacement. Could you help us return this?",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@164625 I'm sorry to know about the defective product. Please reach us from here: https://t.co/rS49hgaADF we'll check your details and help you further accordingly. ^SV",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_162",
+    "customer_text": "How can I request a delivery fee refund? I was due an item today which has now been delayed by a day or 2",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@151162 Hi! I'm sorry to hear your item has been delayed. Just to clarify, have we missed the delivery date shown in your order confirmation email? Were you informed of the reason for the delay? ^RB",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_163",
+    "customer_text": "What on earth?? please explain to me why my signature wasn’t required when a kindle fire was delivered, but a nine dollar stuffed animal requires one??? https://t.co/ru9UIyvbk7",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@136747 Hello, Jo. Thanks for reaching out to us today. Are you still having trouble with your delivery? ^FJ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_164",
+    "customer_text": "U needs to stop buying companies and focus on their customer service. Which is the worst I have ever experienced #Shameful #Worstretunpolicy",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp @115821 Is there anyone to help me",
+        "tweet_id": "180301"
+      },
+      {
+        "role": "agent",
+        "text": "@127178 We will not be able to provide you any further insight regarding the query. Appreciate your understanding. ^AK",
+        "tweet_id": "180298"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp This is really insane team #AmazonSucks #AmazonGreatIndianFestival",
+        "tweet_id": "180299"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@127178 I'm sorry for the hassle. We've responded to you here: https://t.co/xuHrT2Drgs, request you to check. ^MA",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_165",
+    "customer_text": "They have promised me that my cashback of INR 1500 will be received by 5th November, hope this doesn't repeat in future. Thanks #AmazonIndia",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@120039 That's strange. Let me check this out for you. Please drop your details here: https://t.co/rgb8rZzIXD (1/2) ^VM",
+        "tweet_id": "18201"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I have submitted all the required details, please do the necessary else i'll have to go to consumer forum this time :(",
+        "tweet_id": "18188"
+      },
+      {
+        "role": "agent",
+        "text": "@120039 Thanks for sharing your details. We'll get in touch with you soon. ^AK",
+        "tweet_id": "18186"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@120039 I get your concern, Abhilash. Cash back shall be processed as per the timelines shared with you. Rest assured. ^SV",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_166",
+    "customer_text": "I have an account on amazon that has never bought amazon coins before, has a credit card signed up and has 1 click settings on, but I cannot use the discount code recently given out.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@156928 please help @156929 https://t.co/xixcupa7SQ",
+        "tweet_id": "174565"
+      },
+      {
+        "role": "agent",
+        "text": "@156927 Oh no! I'm sorry for the frustration, Danny. We'd love to help! Are you trying to purchase the coins from a mobile device or a computer? Thanks! ^AJ",
+        "tweet_id": "174563"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@156927 Please reach us directly via phone or chat so we can look into this with you: https://t.co/qy3J24VGxb ^BV",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_167",
+    "customer_text": "Sir, i got a mail by ur team again that they cant process my refund. I request you to check the vedio again and reconcern the issue. Its your delivery teams fault of missing the item. Please dont make me to share this empty box vedio all over other sites and higher authorities.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115821 @AmazonHelp Thankyou very much sir, for ur concern about my problem. As you mailed me for my account details i linked it with my account. Please have a look and talk to ur investigation and bank team to make my refund process fast.",
+        "tweet_id": "63811"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@130666 Resolution provided in the mail is the best we could offer at this point in time. Appreciate your understanding. ^VH",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_168",
+    "customer_text": "my mobile not giving refund problem please help me",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@123029 I was unable to comprehend your concern. Could you please elaborate on your issue so we could help you better? ^KH",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_169",
+    "customer_text": "I keep getting the DRM message and I have to delete the book off my kindle and redownload it. It's not all of my books but its been happening often. It's just inconvenient when Im on the go and want to read but then I can't because I have to redownload the book.",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@117634 it would be amazing if I don't have to keep downloading books ive already purchased and downloaded on my kindle. Im ready to get a nook because after years Im over it. Now I can't read because Im out and there are no hotspots #annoying",
+        "tweet_id": "75930"
+      },
+      {
+        "role": "agent",
+        "text": "@132999 Hi, sorry to hear your having this issue. Did you download these books before? Could something have caused them to be deleted from your Kindle?^ES",
+        "tweet_id": "75927"
+      }
+    ],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@132999 Can you contact us directly so that we can look into this for you? You can get in contact via this link: https://t.co/hApLpMlfHN ^KI",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_170",
+    "customer_text": "No reply still horrible service",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@170030 I'm sorry that the issue hasn't been resolved yet. May I know if you've forwarded your details in the link provided earlier?^EM",
+        "tweet_id": "227865"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp Yes I have done that hundreds of times",
+        "tweet_id": "227866"
+      },
+      {
+        "role": "agent",
+        "text": "@170030 case I would request you to link an email ID to your amazon account and send the (2/3)^HR",
+        "tweet_id": "227868"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@170030 if you have shared your details through the link provided by my colleague 'HR'. (2/2) ^VM",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_171",
+    "customer_text": "That's ok. Just had to vent about the issue. Everything looks ok on the account from what I can see. I'll keep an eye and if I have any issues I shall contact support again. Thanks! 😀",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@147116 Very sorry to hear that. Have we been able to ensure the gifts have processed for you? Have we confirmed the payment has gone through ? We certainly would like to help if possible. ^CR",
+        "tweet_id": "138134"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp I think she updated the payment, but when I asked when it would be charged to my account as nothing appears to have been charged yet, she proceeded to give me delivery date information.",
+        "tweet_id": "138135"
+      },
+      {
+        "role": "agent",
+        "text": "@147116 Really sorry about this. I'm afraid we don't have access to account details here on Twitter. ^KM",
+        "tweet_id": "138137"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@147116 No worries at all :) Let us know if you need anything else!^MA",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_172",
+    "customer_text": "Guys can i get a response. it more than 24 hrs. yet waiting for your mail.",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@147824 Could you please confirm if you have shared the details through the secured link provided earlier. Twitter being a social platform we will not be able to access your account details from here. ^VH",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_173",
+    "customer_text": "So mad at they sent the wrong item. I got tattoo ink instead of cross stitch supplies!!! I need it today &now I have to wait week",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@130481 I'm very sorry for the mix-up! Please let us know if there are any further issues or if assistance is needed with the return. ^KL",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_174",
+    "customer_text": "Your chat folks have been very helpful & have issued a refund for the price difference. Appreciated!",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@176639 We'd be happy to take a look into available options with you via phone/chat: https://t.co/JzP7hlA23B ^ML",
+        "tweet_id": "255078"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp What’s the US version of that please? I’m in the US w/my US acct.",
+        "tweet_id": "255080"
+      },
+      {
+        "role": "agent",
+        "text": "@176639 Sorry about that! Here you go: https://t.co/hApLpMlfHN ^TR",
+        "tweet_id": "255081"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@176639 That's what we like to hear! I'm glad we could get this resolved. Have a good day! ^WT",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_175",
+    "customer_text": "Why would Belgian customers pay for #Prime Video if we cannot order the Fire TV Stick and the Prime Video app doesn't support #Chromecast ? #fail #AmazonDE https://t.co/QaGvmc39l3 https://t.co/666T0CZFdQ",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@142690 You can stream Prime Video on https://t.co/FYM9PIZOR8. More information about that you find here: https://t.co/TTWNOGgXGo ^NW",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_176",
+    "customer_text": "worst return policy I have ever seen in any online shopping website.",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@122101 Could you please elaborate the issue so that we can assist you. ^SU(2/2)",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_177",
+    "customer_text": "Thank you for the most disappointing sales on books. Really, no point in having the sales only.",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@170840 I'm sorry you feel this way. Could you please tell us what went wrong? We'll be glad to help. ^AG",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_178",
+    "customer_text": "staying tuned since october. kuch toh karo #AurDikhao Can some higher authority comment on its release plz",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115850 When is Kindle Fire HD 2017 series launching in India? Unable to buy from https://t.co/TyMJ80HIye, it doesn't ship to India. Wanted one very badly as black friday is on and sales are going. Such a useful thing it is. Is there any way I can buy it in Ondia?",
+        "tweet_id": "167943"
+      },
+      {
+        "role": "agent",
+        "text": "@155068 I understand your concern regarding the launch of kindle series. However, we haven't made any announcement on it yet. Please stay tuned. ^SD",
+        "tweet_id": "167941"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@155068 As informed earlier, we do not have an update on this Girish. ^NR",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_179",
+    "customer_text": "I ordered cup set received it broken returned it but again after few days received the same returned order more broken and no refund",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115821 Very poor service by Amazon no support or convinience to customers",
+        "tweet_id": "230622"
+      },
+      {
+        "role": "agent",
+        "text": "@170933 That's quite a remark. I would like to help! May I know what went wrong? ^HR",
+        "tweet_id": "230620"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@170933 we'll check it right away. (2/2)^AU",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_180",
+    "customer_text": "Then please tell me when I will be getting a partial refund for my prime membership. As I paid for next day delivery no matter what time of year???",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@115830 - your service is getting worse I buy an item on prime which is meant to be next day delivery. Yet it won’t be delivered for 3 days!! Time to #cancel my #amazonprime account. https://t.co/r17LLE4zBK",
+        "tweet_id": "138170"
+      },
+      {
+        "role": "agent",
+        "text": "@147123 During this busy time we have extended the delivery window for Prime orders: https://t.co/J1emcxjBhn Thank you for your patience.^SM",
+        "tweet_id": "138169"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@147123 I'm sorry for the inconvenience Danny. You can cancel your Prime membership and check if you are eligible for a partial refund here: https://t.co/xpAYpCSBKP.^MA",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_181",
+    "customer_text": "Ainda estou me familiarizando com os comandos. Mas já dei uma olhada na amostra do 1984, G. Orwell. Estou encantada com meu Kindle!",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "Ganhar um @117804 do boy é tudo de bom!",
+        "tweet_id": "218162"
+      },
+      {
+        "role": "agent",
+        "text": "@168013 Alineee, que amor o seu boy! ❤❤ Já começou a ler algum livro? ^DA https://t.co/3IT2L4jCxK",
+        "tweet_id": "218161"
+      }
+    ],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@168013 Com certeza você vai adorar!😊Aline, tomara que curta muito a leitura! Caso tiver alguma dúvida, é só nos contatar! ^HC",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_182",
+    "customer_text": "why you are playing fake quiz with fake prizes,worst amazon. 30th november Aveeno baby quiz Oneplus5T quiz LGQ6 app quiz Fake quiz",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@139822 All contest winners are listed here: https://t.co/BNx6VKtg6D. Kindly stay tuned while we announce the winners of LGQ6 quiz. ^NR",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_183",
+    "customer_text": "why do I get this error every time I try to update my subscribe and save? Thanks https://t.co/PyzdkkXiol",
+    "conversation_history": [],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@136266 Hey there! With Twitter, we're unable to access any account or order information. From viewing the screenshot, it appears that the specific address is the problem. Have you tried selecting another address? Please, let us know. We're here for you! ^JE",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_184",
+    "customer_text": "https://t.co/P9n3pwFrZf",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@149473 I returned an item via Bluedart , I got a recipient , @115850 saying it's edited https://t.co/YJhNHmPqah",
+        "tweet_id": "234803"
+      },
+      {
+        "role": "customer",
+        "text": "@171909 We request you to please coordinate with us on __email__ to assit you better.Thank you.",
+        "tweet_id": "234802"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@171909 Hi Aloke, could you please tell us what issue you're facing with the order? ^HN",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_185",
+    "customer_text": "pepper spray bottle I ordered from you is defective. Don't even want to try fixing it,with fear of harming myself or someone else.",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@174408 Apologies for the trouble. Kindly connect with us here: https://t.co/vlvfJr4nN9 and we'll sort this out for you. ^PB",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_186",
+    "customer_text": "Hi there. The package I needed for Thanksgiving that I paid extra to have delivered on Wednesday just arrived. Can I get a refund on the rush shipping charges?",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@152950 I'm very sorry about the delay. We're unable to access your account via Twitter. At your convenience, reach out to us here: https://t.co/hApLpMlfHN We'd be happy to discuss your order in real-time. ^SK",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_187",
+    "customer_text": "Fool me twice! Another kindle release day, another missed \"guaranteed release day delivery\" #AMAZONFAIL",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@119447 I'm sorry your Kindle hasn't arrived! Can you tell us the current tracking status? https://t.co/Y5jpI9gRhE ^EZ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_188",
+    "customer_text": "Very disappointed with customer service. Terrible experience. The call just got worse and worse. #AmazonPrime",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@132127 I apologise for the bad experience.We would love to help you out with this, but can you just give us a bit more info first. Thank you.^SM",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_189",
+    "customer_text": "I’ll try that. Thank you for your help.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@148592 Can you please confirm who the item was sold and fulfilled by? ^BD",
+        "tweet_id": "144175"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp No as there was no delivery very note or anything with any contact details on it.",
+        "tweet_id": "144177"
+      },
+      {
+        "role": "agent",
+        "text": "@148592 Sellers can be contacted via e-mail by following the steps listed here: https://t.co/Jc92aAm8N5. If you don't receive a reply within two business days, please let us know. ^MV",
+        "tweet_id": "176475"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@148592 Your very welcome Deirdre. Have a lovely weekend:)^GA",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_190",
+    "customer_text": "Delivery date changed once again!!",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@133240 Was this item being shipped by Amazon or by a third-party seller? We'd like to help! ^ZW",
+        "tweet_id": "77336"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp The order is sold by Amazon. Thank you",
+        "tweet_id": "77337"
+      },
+      {
+        "role": "agent",
+        "text": "@133240 Thanks for confirming, Steffan! Please allow for delivery by 21:00 on the new estimated delivery date. Otherwise, we'll be happy to research other options via phone or chat here: https://t.co/JzP7hlA23B. I hope this helps! ^SD",
+        "tweet_id": "77338"
+      }
+    ],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@133240 I do apologize for the delays you've experienced in receiving your parcel, Steffan. This is certainly not the level of service we strive to deliver. Could you contact us by phone or chat using the link ^SD provided so we can take a closer look with you? ^AZ",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_191",
+    "customer_text": "Products continue to be damaged at AMD1 FC, please ask the relevant team to get in touch with us ASAP",
+    "conversation_history": [],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@148279 That's Strange! Kindly report this to our support team here: https://t.co/vlvfJr4nN9 and we'll have this checked right away. ^HS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_192",
+    "customer_text": "What part of English you don’t understand?! Please provide me refund details of all the cancelled orders on 15th Oct.... call me if you still don’t get it... so blah man",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@150754 We've received your details. We're looking into the issue and shall get back to you soon. ^SH",
+        "tweet_id": "152107"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp What’s the update here?!",
+        "tweet_id": "152106"
+      },
+      {
+        "role": "agent",
+        "text": "@150754 You must have received a correspondence from our team. Kindly check the same here: https://t.co/ubzNHWZvL2 ^SG",
+        "tweet_id": "152104"
+      }
+    ],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@150754 We don't have direct access to your Amazon account over Twitter. Please write back to our correspondence, so that we can review the situation and make it right for you. ^CB",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_193",
+    "customer_text": "Updated won’t let me download book I own both in hardcover and kindle format. WTF I need for research now! https://t.co/JXfytUbRwS",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@130299 Oh no! We would love to assist you with this in real time. Please contact us here: https://t.co/hApLpMlfHN",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_194",
+    "customer_text": "It notes its being sent back to the sender - which, if true, is totally unacceptable - not exactly #prime level service",
+    "conversation_history": [
+      {
+        "role": "customer",
+        "text": "@AmazonHelp can you explain why a package I was due to receive yesterday was marked as refused at my address - when no one refused it? Poor.",
+        "tweet_id": "23208"
+      },
+      {
+        "role": "agent",
+        "text": "@121053 Hi Mick, did you receive a calling card? Is your parcel listed as out for delivery again today: https://t.co/BQmcNXViiI ^TS",
+        "tweet_id": "23206"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp No I did not. And the first I knew of it being refused is when I checked the app. Can you clarify how I get can get this error rectified?",
+        "tweet_id": "23207"
+      }
+    ],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@121053 Hi, please reach out to us here: https://t.co/JzP7hlA23B we can look into the order for you. ^AS",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_195",
+    "customer_text": "Thanks for wasting my time and linking me to the US support page, i'm in the UK!!",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@146893 I am sorry to hear this. We strive to offer you the best Black Friday Sales and Cyber Week Deals. During this time, deliveries may take slightly longer than usual. The delivery date at checkout provides our most accurate estimated delivery date. ^GA",
+        "tweet_id": "136969"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp But this has happened repeatedly for the last 4 weekend!?",
+        "tweet_id": "136971"
+      },
+      {
+        "role": "agent",
+        "text": "@146893 Hi, I am sorry to hear that you have had unsuccessful delivery attempts. You can contact us directly and we can investigate for you: https://t.co/hApLpMlfHN.^HS",
+        "tweet_id": "136973"
+      }
+    ],
+    "ground_truth_intent": "GENERAL_INQUIRY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "MEDIUM",
+    "ground_truth_response": "@146893 Apologies you were provided the incorrect link there Adam. You can get in touch here: https://t.co/JzP7hlA23B. ^TI",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_196",
+    "customer_text": "ugh app keeps sending me garbage notifications and can't figure out how to stop them. May delete this shit.",
+    "conversation_history": [],
+    "ground_truth_intent": "DELIVERY_STATUS",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@148602 I understand your frustration! Can you tell me which app you are using that is causing you this issue? ^DJ",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_197",
+    "customer_text": "I don't think the package is damaged.Rather carrier communication issue. Why else the changing stories ?found out about return from email.",
+    "conversation_history": [
+      {
+        "role": "agent",
+        "text": "@125402 Did we replace the order? When you spoke with us regarding your order, what options did we provide? ^CO",
+        "tweet_id": "42549"
+      },
+      {
+        "role": "customer",
+        "text": "@AmazonHelp No options were provided, happy to email the chat transcripts.Just told different stories.I re-ordered won't receive until Friday too late.",
+        "tweet_id": "42550"
+      },
+      {
+        "role": "agent",
+        "text": "@125402 Did we mention that the package is being returned since it's damaged? ^WJ",
+        "tweet_id": "42552"
+      }
+    ],
+    "ground_truth_intent": "ITEM_ISSUE",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "ACCOUNT_LOOKUP_REQUIRED",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@125402 Goodness, my apologies for the frustration! Please keep us posted on your new order. We want to help any way we can! ^KN",
+    "is_multi_turn": true
+  },
+  {
+    "example_id": "gold_sample_198",
+    "customer_text": "My email id is __email__ I not got refund money on a product plzz call on 9460724957",
+    "conversation_history": [],
+    "ground_truth_intent": "RETURN_REFUND",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@171265 Please don't provide your order details, as we consider it to be personal info. Our page is visible to the public. 2/2 ^PS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_199",
+    "customer_text": "so disappointed again 2nd time this has happened. On a cruise and kindle has frozen. No holiday reading for me 😫",
+    "conversation_history": [],
+    "ground_truth_intent": "PRIME_DIGITAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason_category": "NONE",
+    "difficulty_tier": "EASY",
+    "ground_truth_response": "@159169 Oh no!!! What happened? Have you tried resetting the device? ^AS",
+    "is_multi_turn": false
+  },
+  {
+    "example_id": "gold_sample_200",
+    "customer_text": "This is what I experienced with your GI festival. Ordered with prime.Worst experience. #AmazonGreatIndianFestival https://t.co/YZUMBHRmNd",
+    "conversation_history": [],
+    "ground_truth_intent": "FEEDBACK_COMPLAINT",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason_category": "FINANCIAL_DISPUTE",
+    "difficulty_tier": "HARD",
+    "ground_truth_response": "@167353 Looks like you've not received your order on time. Our apologies. Kindly reach us at https://t.co/vlvfJr4nN9. We'll help ^KC",
+    "is_multi_turn": false
+  }
+]

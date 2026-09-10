@@ -1,0 +1,52 @@
+[
+  {
+    "rank": 1,
+    "failure_mode": "Multi-Intent Compound Query with Mixed Sentiment",
+    "description": "Customer combines an inquiry about late delivery with a secondary complaint about damaged packaging from a past order.",
+    "real_example": "Where is my book order? It's 2 days late, and last week your driver threw my package in the rain!",
+    "expected_behavior": "Acknowledge the current late delivery (DELIVERY_STATUS) while empathetic to the past driver complaint, or escalate due to recurring negative feedback.",
+    "actual_behavior": "Classified solely as DELIVERY_STATUS, ignoring the driver misconduct complaint in the second sentence.",
+    "root_cause_hypothesis": "Single-label TF-IDF/Dense embeddings prioritize the dominant tracking keywords ('where is my', 'order', 'late') and dilute the tail complaint clause.",
+    "actionable_fix": "Implement a multi-intent segmenter that parses compound clauses into sub-queries before intent classification and escalation gating."
+  },
+  {
+    "rank": 2,
+    "failure_mode": "Sarcastic / Passive-Aggressive Praise",
+    "description": "Customer uses sarcastic phrasing ('Great job delivering an empty box!') that misleads lexical classifiers into positive sentiment.",
+    "real_example": "Wow great job @AmazonHelp! Delivered my package on time, too bad there was nothing inside the box!",
+    "expected_behavior": "Classify as ITEM_ISSUE (missing item) and ESCALATE_TO_HUMAN for stolen contents investigation.",
+    "actual_behavior": "High confidence match on GENERAL_INQUIRY or DELIVERY_STATUS due to 'great job' and 'delivered on time'.",
+    "root_cause_hypothesis": "Surface n-grams ('great job', 'on time') dominate linear bag-of-words weights without contextual sarcasm resolution.",
+    "actionable_fix": "Add sarcasm-aware contrastive embeddings or an explicit LLM sentiment/contradiction check in the pre-escalation filter."
+  },
+  {
+    "rank": 3,
+    "failure_mode": "Private Account Operations Over Public Channel",
+    "description": "Customer demands direct account modifications (e.g. canceling payment card, updating address) over public Twitter.",
+    "real_example": "I want my amazon payments account CLOSED immediately. dm me now please.",
+    "expected_behavior": "Recognize that account deletion cannot be executed over Twitter, provide secure authentication link, and route to authenticated agent (ESCALATE_TO_HUMAN).",
+    "actual_behavior": "Drafted generic policy steps instead of enforcing the strict authenticated handoff protocol.",
+    "root_cause_hypothesis": "The intent classifier mapped 'payments account' to BILLING_PAYMENT, but retrieval included general billing FAQs rather than account closure security rules.",
+    "actionable_fix": "Add explicit deterministic triggers for account deletion, bank account detachment, and credential alterations."
+  },
+  {
+    "rank": 4,
+    "failure_mode": "Ambiguous Order Identifiers & Context Fragmentation",
+    "description": "Customer provides bare numbers or fragmented shorthand without specifying whether it is an order ID, tracking number, or item model.",
+    "real_example": "114-8829102-3920194 status??",
+    "expected_behavior": "Infer order status lookup from regex pattern (3-7-7 digit Amazon order ID) and guide customer to secure portal.",
+    "actual_behavior": "Classified as OUT_OF_SCOPE / LOW_INTENT_CONFIDENCE due to short token length.",
+    "root_cause_hypothesis": "Bag-of-words vectorizers strip punctuation and numerical tokens during preprocessing.",
+    "actionable_fix": "Incorporate regex entity extractors for Amazon Order IDs (\\d{3}-\\d{7}-\\d{7}) to preserve intent semantics for ultra-short queries."
+  },
+  {
+    "rank": 5,
+    "failure_mode": "Retrieval Drift Across Regional Amazon Portals",
+    "description": "Customer refers to an Amazon UK / Germany / India specific service (e.g., 'Royal Mail tracking', 'DPD dropoff', 'Prime Video UK') but receives a US-centric link.",
+    "real_example": "My Hermes tracking says parcel was left in bin. What should I do?",
+    "expected_behavior": "Provide regional carrier guidance (amazon.co.uk/help) matching the UK carrier 'Hermes'.",
+    "actual_behavior": "Retrieved top US historical cases directing the customer to generic US 'amazon.com/help'.",
+    "root_cause_hypothesis": "Dense vector retrieval without geographical entity conditioning retrieves the highest volume US responses.",
+    "actionable_fix": "Extract regional carrier entities (Hermes, Royal Mail, Australia Post) and append regional metadata filters to FAISS search."
+  }
+]
